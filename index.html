@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Petrograd</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+
+        <a>
+            <h1>Petrograd</h1>
+        </a>
+
+        <btn onclick="openNav()">☰</btn>
+
+        <nav class="mobile-nav">
+            <a href="#" class="closeBtn" onclick="closeNav()">x</a>
+            <a href="index.html">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Reserve</a>
+        </nav>
+
+        <nav class="desktop-nav">
+            <a href="index.html">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Reserve</a>
+        </nav>
+    </header>
+
+    <div class="img-container"></div>
+
+    <div class="description">
+        <div class="product">
+
+            <h1 class="description-name">RNAME</h1>
+            <div class="close-description"><a onclick="closeDescription()">X</a></div>
+            <img src="" class="description-img">
+            <p class="description-description">DESCRIPTION</p>
+            <h2 class="description-price"><del class="discount">PRICE</del> <span>NEW PRICE</span> - kr</h2>
+            <div class="conditions">
+                <i class="fas fa-carrot"></i>
+                <i class="fas fa-glass-martini"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <main id="menu">
+        <nav class="nav-menu"></nav>
+    </main>
+
+
+
+    <template id="myTemp">
+
+
+        <article>
+           <h1 class="name">NAME</h1>
+            <img src="IMG" class="img">
+            <h2 class="price"><del>PRICE</del>  <span>NEW PRICE</span> - kr</h2>
+            <div class="conditions">
+                <i class="fas fa-carrot"></i>
+                <i class="fas fa-glass-martini"></i>
+            </div>
+            <button class="btn">+</button>
+        </article>
+
+    </template>
+
+
+    <footer id="contact"></footer>
+
+    <script src="script/script.js">
+    </script>
+
+</body>
+
+</html>
